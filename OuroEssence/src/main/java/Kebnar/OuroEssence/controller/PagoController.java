@@ -93,16 +93,16 @@ public class PagoController {
         try {
             Payment executedPayment = payment.execute(apiContext, paymentExecution);
             if (executedPayment.getState().equals("approved")) {
-                return "pago-exitoso";  // Nombre de una vista HTML (pago-exitoso.html)
+                return "redirect:/pago-exitoso.html";  // Nombre de una vista HTML (pago-exitoso.html)
             }
         } catch (PayPalRESTException e) {
             e.printStackTrace();
         }
-        return "pago-error";
+        return "redirect:/pago-error.html";
     }
 
     @GetMapping("/cancel")
     public String cancelarPago() {
-        return "pago-cancelado";
+        return "redirect:/pago-cancelado.html";
     }
 }
