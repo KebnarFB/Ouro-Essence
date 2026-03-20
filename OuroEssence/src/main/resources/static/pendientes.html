@@ -29,16 +29,28 @@
             </div>
             <p>Pendiente con diamante azul.</p>
             <p class="precio">$20,000</p>
-            <a href="#" class="comprar">Pulse aquí para comprar</a>
+            <form action="/pay" method="post" style="display: inline;">
+                <input type="hidden" name="nombre" value="Pendiente con diamante azul">
+                <input type="hidden" name="precio" value="20000">
+                <input type="hidden" name="cantidad" value="1">
+                <input type="hidden" name="sku" value="PEND-AZUL-001">
+                <button type="submit" class="comprar">Pulse aquí para comprar</button>
+            </form>
         </div>
 
         <div class="producto">
             <div>
                 <img src="/Imagenes/Pendiente/pendiente_diamante.PNG" alt="Pendiente con diamante" class="imagen-placeholder">
             </div>
-            <p>Pendiente con diamante.</p>
+            <p>Pendiente con diamante verde.</p>
             <p class="precio">$22,000</p>
-            <a href="#" class="comprar">Pulse aquí para comprar</a>
+            <form action="/pay" method="post" style="display: inline;">
+                <input type="hidden" name="nombre" value="Pendiente con diamante verde">
+                <input type="hidden" name="precio" value="22000">
+                <input type="hidden" name="cantidad" value="1">
+                <input type="hidden" name="sku" value="PEND-VERDE-001">
+                <button type="submit" class="comprar">Pulse aquí para comprar</button>
+            </form>
         </div>
 
         <div class="producto">
@@ -47,7 +59,13 @@
             </div>
             <p>Pendiente con diamante rosa.</p>
             <p class="precio">$24,000</p>
-            <a href="#" class="comprar">Pulse aquí para comprar</a>
+            <form action="/pay" method="post" style="display: inline;">
+                <input type="hidden" name="nombre" value="Pendiente con diamante rosa">
+                <input type="hidden" name="precio" value="24000">
+                <input type="hidden" name="cantidad" value="1">
+                <input type="hidden" name="sku" value="PEND-ROSA-001">
+                <button type="submit" class="comprar">Pulse aquí para comprar</button>
+            </form>
         </div>
     </section>
 

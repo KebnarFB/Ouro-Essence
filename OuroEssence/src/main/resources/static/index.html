@@ -29,7 +29,13 @@
             </div>
             <p>Anillo con diamante en forma de óvalo.</p>
             <p class="precio">$20,000</p>
-            <a href="#" class="comprar">Pulse aquí para comprar</a>
+            <form action="/pay" method="post" style="display: inline;">
+                <input type="hidden" name="nombre" value="Anillo con diamante en forma de óvalo">
+                <input type="hidden" name="precio" value="20000">
+                <input type="hidden" name="cantidad" value="1">
+                <input type="hidden" name="sku" value="ANILLO-OVALO-001">
+                <button type="submit" class="comprar">Pulse aquí para comprar</button>
+            </form>
         </div>
 
         <div class="producto">
@@ -38,7 +44,13 @@
             </div>
             <p>Anillo con diamante en forma de cuadrado.</p>
             <p class="precio">$22,000</p>
-            <a href="#" class="comprar">Pulse aquí para comprar</a>
+            <form action="/pay" method="post" style="display: inline;">
+                <input type="hidden" name="nombre" value="Anillo con diamante en forma de cuadrado">
+                <input type="hidden" name="precio" value="22000">
+                <input type="hidden" name="cantidad" value="1">
+                <input type="hidden" name="sku" value="ANILLO-CUADRADO-001">
+                <button type="submit" class="comprar">Pulse aquí para comprar</button>
+            </form>
         </div>
 
         <div class="producto">
@@ -47,7 +59,13 @@
             </div>
             <p>Anillo con diamante en forma de círculo.</p>
             <p class="precio">$24,000</p>
-            <a href="#" class="comprar">Pulse aquí para comprar</a>
+            <form action="/pay" method="post" style="display: inline;">
+                <input type="hidden" name="nombre" value="Anillo con diamante en forma de círculo">
+                <input type="hidden" name="precio" value="24000">
+                <input type="hidden" name="cantidad" value="1">
+                <input type="hidden" name="sku" value="ANILLO-CIRCULO-001">
+                <button type="submit" class="comprar">Pulse aquí para comprar</button>
+            </form>
         </div>
     </section>
 
